@@ -210,6 +210,8 @@
                             <jvmArguments>
                                 -javaagent:target/skywalking-agent/apache-skywalking-apm-bin/agent/skywalking-agent.jar
                                 -Dskywalking.agent.service_name=${pinpoint.applicationName}
+                                -Dskywalking.logging.dir=logs
+                                -Dskywalking.logging.level=DEBUG
                             </jvmArguments>
                         </configuration>
                     </plugin>

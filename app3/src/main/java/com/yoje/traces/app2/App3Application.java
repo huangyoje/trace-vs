@@ -8,11 +8,11 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @author yoje
  * Date    2020-01-08
  */
-@SpringBootApplication(scanBasePackages = "com.yoje.traces.app2", exclude = {DataSourceAutoConfiguration.class})
-public class App2ServerApplication {
+@SpringBootApplication(scanBasePackages = "com.yoje.traces.app2")
+public class App3Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(App2ServerApplication.class, args);
+        SpringApplication.run(App3Application.class, args);
     }
 
 }

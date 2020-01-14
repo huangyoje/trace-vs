@@ -1,4 +1,4 @@
-package com.yoje.traces.app2.beta;
+package com.yoje.traces.app2;
 
 import com.twitter.util.Future;
 import com.yoje.traces.vs.service.BetaService;
