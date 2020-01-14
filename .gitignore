@@ -1,0 +1,37 @@
+# project
+logs
+work
+target
+data
+install
+overlays
+
+# Maven
+deploy/
+target/
+.mvn
+
+# Eclipse
+.classpath
+.project
+.settings/
+/.externalToolBuilders
+/build
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+/.idea/
+out/
+
+# vscode
+.vscode
+
+# npm
+node_install/
+node_modules/
+jsdoc/
+
+#mac
+.DS_Store
