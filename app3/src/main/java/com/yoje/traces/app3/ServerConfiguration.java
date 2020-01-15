@@ -1,4 +1,4 @@
-package com.yoje.traces.app2;
+package com.yoje.traces.app3;
 
 import com.twitter.finagle.ListeningServer;
 import com.twitter.finagle.Thrift;

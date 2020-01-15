@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<settings>
+    <profiles>
+        <profile>
+            <id>nexus</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Maven Repository Switchboard</name>
+                    <layout>default</layout>
+                    <url>http://repo1.maven.org/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>twitter</id>
+                    <name>Twitter Maven Repository</name>
+                    <layout>default</layout>
+                    <url>https://maven.twttr.com/</url>
+                    <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+            <pluginRepository>
+                <id>central</id>
+                <url>https://repo.maven.apache.org/maven2</url>
+            </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <servers>
+   <server>
+  <id>twitter</id>
+  <configuration>
+    <httpConfiguration>
+      <all>
+        <connectionTimeout>6000</connectionTimeout>
+        <readTimeout>6000</readTimeout>
+      </all>
+    </httpConfiguration>
+  </configuration>
+</server>
+    </servers>
+
+    <pluginGroups>
+        <pluginGroup>org.grails</pluginGroup>
+        <pluginGroup>fr.jcgay.maven.plugins</pluginGroup>
+    </pluginGroups>
+</settings>
